@@ -1,0 +1,150 @@
+<% block('styles').append(`<style>
+    .dataTables_scrollBody::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: #F5F5F5;
+    }
+
+    .dataTables_scrollBody::-webkit-scrollbar
+    {
+        width: 12px;
+        height: 12px;
+        background-color: #F5F5F5;
+    }
+
+
+    .dataTables_scrollBody::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #858796;
+    }
+
+    th, td {
+        color: black;
+        text-align: center !important;
+        vertical-align: middle !important;
+    }
+    .yellow {
+        background: #fd7e14;
+    }
+    .green {
+        background: #1cc88a;
+    }
+</style>`) %>
+<% block('styles').append(`<link href="../../../public/css/chat.css" rel="stylesheet" type="text/css">`) %>
+<% layout('./layouts/main', {name: 'Dashboard' }) %>
+<%- include('./modal.ejs') -%>
+    <!-- List User -->
+    <div class="col-xl-12 col-lg-12">
+        <div class="card shadow mb-4">
+            <!-- Card Header - Dropdown -->
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h5 class="m-0 font-weight-bold text-primary">Danh Sách IOT Chi Tiết</h5>
+            </div>
+            <!-- Card Body -->
+            <div class="card-body">
+                <div class="card" style="color: black;">
+                    <div class="card-header p-0">
+                        <h4>Upload Firmware And Control Bell</h4>
+                    </div>
+                    <div class="card-body row">
+                        <div class="col-md-6">
+                        <form action="/api/upload-file" enctype="multipart/form-data" method="POST" class="row">
+                            <div class="custom-file col-md-10">
+                                <input type="file" class="custom-file-input" id="fileUploaded" name="fileUploaded" required>
+                                <label class="custom-file-label" for="fileUploaded" id="fileUploaded-label">Choose file...</label>
+                                <div class="invalid-feedback">Choose file .bin</div>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="submit" class="btn btn-success btn-upload-firmware mb-2">Upload</button>
+                            </div>
+                        </form>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control bg-light border-0 small" id="mac-iot-bell" placeholder="MAC IOT Control (Or MAC1#MAC2#MAC3)"
+                                    aria-label="Search" aria-describedby="mac-iot-bell">
+                                <input type="number" class="form-control bg-light border-0 small col-lg-2" id="time-control-bell" placeholder="Time Control Bell (s)"
+                                    aria-label="Search" aria-describedby="time-control-bell" value="10" min="0" step="1">
+                                <div class="input-group-append">
+                                    <button class="btn btn-success btn-control-bell" type="button">Whistle</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="color: black;">
+                    <div class="card-header p-0">
+                        <h4>Update Firmware IOT</h4>
+                    </div>
+                    <div class="input-group card-body">
+                        <input type="text" class="form-control bg-light border-0 small" id="updateFirmware" placeholder="MAC IOT Update (Or MAC1#MAC2#MAC3)"
+                            aria-label="Search" aria-describedby="basic-addon2">
+                        <select name="" id="firmwareSelect" class="form-control bg-light border-0 small">
+                            <option value=""></option>
+                        </select>
+                        <div class="input-group-append">
+                            <button class="btn btn-info btn-update-firmware" type="button">Update</button>
+                            <button class="btn btn-danger btn-update-firmware-all" type="button">Update All</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 hide" id="update-progress">
+                        <div class="alert alert-success">Tiến Độ Cập Nhật: <span class="text-bold update-progress">0/0</span></div>
+                    </div>
+                </div>
+                <div class="chart-area">
+                    <table class="table table-bordered" id="dataTable" width="99%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Machine</th>
+                                <th>MAC</th>
+                                <th>IP</th>
+                                <th>Version Firmware</th>
+                                <th>Version HMI</th>
+                                <th>Trạng Thái</th>
+                                <th>Login</th>
+                                <th>Type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% data.forEach((dat, index)=> { %>
+                                <tr>
+                                    <td>
+                                        <%= index + 1 %>
+                                    </td>
+                                    <td>
+                                        <%= dat.machineName %>
+                                    </td>
+                                    <td>
+                                        <%= dat.mac %>
+                                    </td>
+                                    <td>
+                                        <%= dat.ip %>
+                                    </td>
+                                    <td>
+                                        <%= dat.versionFirmware %>
+                                    </td>
+                                    <td>
+                                        <%= dat.hmi %>
+                                    </td>
+                                    <td>
+                                        <% if(dat.connect==1) { %> Connect <% } else { %> Disconnect <% } %>
+                                    </td>
+                                    <td>
+                                        <% if(dat.login==1) { %> Login <% } else { %> Logout <% } %>
+                                    </td>
+                                    <td>
+                                        <% if(dat.typeMachine==1) { %> Static <% } else { %> Dynamic <% } %>
+                                    </td>
+                                </tr>
+                            <% }); %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+<% block('scripts').append(`<script src="../../../public/js/iotUpdate.js"></script>`) %>

@@ -1,0 +1,23 @@
+<script src="/jquery/dist/jquery.min.js"></script>
+<script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/jquery-easing/jquery.easing.min.js"></script>
+<script src="/public/admin2/js/sb-admin-2.min.js"></script>
+<!-- <script src="/datatables/media/js/jquery.dataTables.min.js"></script> -->
+<script src="/public/vender/datatables/jquery.dataTables.min.js"></script>
+<script src="/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="/moment/moment.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<!-- <script src="/public/vender/toast/toastr.js"></script> -->
+
+<script>
+    var socket = io();
+    let pathName = window.location.pathname.split('/').filter(e => String(e).trim());
+    // Remove all class active
+    $('.active').removeClass('active');
+    // Add class active using url
+    if(pathName.length == 0) {
+        $('.dashboard').addClass('active');
+    } else {
+        $(`.${pathName[pathName.length - 1]}`).addClass('active');
+    }
+</script>

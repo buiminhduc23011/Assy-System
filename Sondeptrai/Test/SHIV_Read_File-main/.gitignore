@@ -1,0 +1,6 @@
+/node_modules
+/iisnode
+/storage
+.env
+logs
+package-lock.json

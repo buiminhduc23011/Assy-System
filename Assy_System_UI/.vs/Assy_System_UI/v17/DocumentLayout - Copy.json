@@ -1,0 +1,502 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|c:\\users\\lenovo\\desktop\\assy\\pc\\assy_system_ui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\Class\\Common.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:Class\\Common.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\MainWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:MainWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\Production.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:UserControl\\Production.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ducbu\\AppData\\Local\\Temp\\.vsdbgsrc\\8bf75af2f78af6e6f3e69e8f0cf70bfa0a14352d10f9bcc295e36bc048381753\\MainWindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ducbu\\OneDrive\\Desktop\\Assy\\PC\\Assy_System_UI\\bin\\Debug\\Test.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\Class\\Data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:Class\\Data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\Class\\PLC.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:Class\\PLC.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\Production.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:UserControl\\Production.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\Class\\Process_Data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:Class\\Process_Data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\Setting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:UserControl\\Setting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\GPIO.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:UserControl\\GPIO.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\Setting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:UserControl\\Setting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_LV.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:UserControl\\IO_LV.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_Drill.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:UserControl\\IO_Drill.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_DC.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:UserControl\\IO_DC.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_Output.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:UserControl\\IO_Output.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_BT.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:UserControl\\IO_BT.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\App.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:App.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\GPIO.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:UserControl\\GPIO.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_Output.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:UserControl\\IO_Output.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_DC.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:UserControl\\IO_DC.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_BT.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:UserControl\\IO_BT.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_Drill.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:UserControl\\IO_Drill.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_LV.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:UserControl\\IO_LV.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\History.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:UserControl\\History.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\History.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:UserControl\\History.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\App.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DE8BE431-ED41-4B8F-AC29-CEC5E04AD127}|Assy_System_UI.csproj|solutionrelative:App.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Data.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\Class\\Data.cs",
+              "RelativeDocumentMoniker": "Class\\Data.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\Class\\Data.cs",
+              "RelativeToolTip": "Class\\Data.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAA2wGEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T10:02:23.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PLC.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\Class\\PLC.cs",
+              "RelativeDocumentMoniker": "Class\\PLC.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\Class\\PLC.cs",
+              "RelativeToolTip": "Class\\PLC.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwCMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T10:02:23.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-24T10:02:23.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\MainWindow.xaml.cs*",
+              "RelativeToolTip": "MainWindow.xaml.cs*",
+              "ViewState": "AQIAACgBAAAAAAAAAAAEwDoBAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T10:02:23.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Production.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\Production.xaml.cs",
+              "RelativeDocumentMoniker": "UserControl\\Production.xaml.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\Production.xaml.cs",
+              "RelativeToolTip": "UserControl\\Production.xaml.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAuwEAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T10:02:22.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Production.xaml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\Production.xaml",
+              "RelativeDocumentMoniker": "UserControl\\Production.xaml",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\Production.xaml",
+              "RelativeToolTip": "UserControl\\Production.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-24T10:02:23.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Common.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\Class\\Common.cs",
+              "RelativeDocumentMoniker": "Class\\Common.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\Class\\Common.cs",
+              "RelativeToolTip": "Class\\Common.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAiwEAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T07:51:05.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-02-25T09:45:40.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Process_Data.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\Class\\Process_Data.cs",
+              "RelativeDocumentMoniker": "Class\\Process_Data.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\Class\\Process_Data.cs",
+              "RelativeToolTip": "Class\\Process_Data.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T10:02:23.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Setting.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\Setting.xaml.cs",
+              "RelativeDocumentMoniker": "UserControl\\Setting.xaml.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\Setting.xaml.cs",
+              "RelativeToolTip": "UserControl\\Setting.xaml.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAA5wCgAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T01:35:24.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\packages.config",
+              "RelativeDocumentMoniker": "packages.config",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\packages.config",
+              "RelativeToolTip": "packages.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-02-25T06:22:40.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GPIO.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\GPIO.xaml.cs",
+              "RelativeDocumentMoniker": "UserControl\\GPIO.xaml.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\GPIO.xaml.cs",
+              "RelativeToolTip": "UserControl\\GPIO.xaml.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAEwCcAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T10:02:23.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Setting.xaml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\Setting.xaml",
+              "RelativeDocumentMoniker": "UserControl\\Setting.xaml",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\Setting.xaml",
+              "RelativeToolTip": "UserControl\\Setting.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-25T09:45:58.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IO_LV.xaml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_LV.xaml",
+              "RelativeDocumentMoniker": "UserControl\\IO_LV.xaml",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_LV.xaml",
+              "RelativeToolTip": "UserControl\\IO_LV.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-24T10:02:23.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IO_Drill.xaml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_Drill.xaml",
+              "RelativeDocumentMoniker": "UserControl\\IO_Drill.xaml",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_Drill.xaml",
+              "RelativeToolTip": "UserControl\\IO_Drill.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-24T10:02:23.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IO_DC.xaml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_DC.xaml",
+              "RelativeDocumentMoniker": "UserControl\\IO_DC.xaml",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_DC.xaml",
+              "RelativeToolTip": "UserControl\\IO_DC.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-24T10:02:23.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IO_Output.xaml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_Output.xaml",
+              "RelativeDocumentMoniker": "UserControl\\IO_Output.xaml",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_Output.xaml",
+              "RelativeToolTip": "UserControl\\IO_Output.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-24T10:02:23.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IO_BT.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_BT.xaml.cs",
+              "RelativeDocumentMoniker": "UserControl\\IO_BT.xaml.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_BT.xaml.cs",
+              "RelativeToolTip": "UserControl\\IO_BT.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T10:02:23.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T10:02:23.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.cs",
+              "DocumentMoniker": "C:\\Users\\ducbu\\AppData\\Local\\Temp\\.vsdbgsrc\\8bf75af2f78af6e6f3e69e8f0cf70bfa0a14352d10f9bcc295e36bc048381753\\MainWindow.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\ducbu\\AppData\\Local\\Temp\\.vsdbgsrc\\8bf75af2f78af6e6f3e69e8f0cf70bfa0a14352d10f9bcc295e36bc048381753\\MainWindow.cs",
+              "ToolTip": "C:\\Users\\ducbu\\AppData\\Local\\Temp\\.vsdbgsrc\\8bf75af2f78af6e6f3e69e8f0cf70bfa0a14352d10f9bcc295e36bc048381753\\MainWindow.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\ducbu\\AppData\\Local\\Temp\\.vsdbgsrc\\8bf75af2f78af6e6f3e69e8f0cf70bfa0a14352d10f9bcc295e36bc048381753\\MainWindow.cs",
+              "ViewState": "AQIAAB0BAAAAAAAAAAAgwCEBAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T07:18:20.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GPIO.xaml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\GPIO.xaml",
+              "RelativeDocumentMoniker": "UserControl\\GPIO.xaml",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\GPIO.xaml",
+              "RelativeToolTip": "UserControl\\GPIO.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-24T10:02:23.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IO_Output.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_Output.xaml.cs",
+              "RelativeDocumentMoniker": "UserControl\\IO_Output.xaml.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_Output.xaml.cs",
+              "RelativeToolTip": "UserControl\\IO_Output.xaml.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T10:02:23.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IO_DC.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_DC.xaml.cs",
+              "RelativeDocumentMoniker": "UserControl\\IO_DC.xaml.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_DC.xaml.cs",
+              "RelativeToolTip": "UserControl\\IO_DC.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T10:02:23.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IO_BT.xaml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_BT.xaml",
+              "RelativeDocumentMoniker": "UserControl\\IO_BT.xaml",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_BT.xaml",
+              "RelativeToolTip": "UserControl\\IO_BT.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-24T10:02:23.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IO_Drill.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_Drill.xaml.cs",
+              "RelativeDocumentMoniker": "UserControl\\IO_Drill.xaml.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_Drill.xaml.cs",
+              "RelativeToolTip": "UserControl\\IO_Drill.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T10:02:23.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IO_LV.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_LV.xaml.cs",
+              "RelativeDocumentMoniker": "UserControl\\IO_LV.xaml.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\IO_LV.xaml.cs",
+              "RelativeToolTip": "UserControl\\IO_LV.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T10:02:23.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "History.xaml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\History.xaml",
+              "RelativeDocumentMoniker": "UserControl\\History.xaml",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\History.xaml",
+              "RelativeToolTip": "UserControl\\History.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-24T10:02:23.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "History.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\History.xaml.cs",
+              "RelativeDocumentMoniker": "UserControl\\History.xaml.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\UserControl\\History.xaml.cs",
+              "RelativeToolTip": "UserControl\\History.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T10:02:23.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Assy\\PC\\Assy_System_UI\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-24T10:02:23.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Test.json",
+              "DocumentMoniker": "C:\\Users\\ducbu\\OneDrive\\Desktop\\Assy\\PC\\Assy_System_UI\\bin\\Debug\\Test.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\ducbu\\OneDrive\\Desktop\\Assy\\PC\\Assy_System_UI\\bin\\Debug\\Test.json",
+              "ToolTip": "C:\\Users\\ducbu\\OneDrive\\Desktop\\Assy\\PC\\Assy_System_UI\\bin\\Debug\\Test.json",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\ducbu\\OneDrive\\Desktop\\Assy\\PC\\Assy_System_UI\\bin\\Debug\\Test.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-02-24T10:02:22.367Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+<% block('styles').append(`<style>
+    .text-user {
+        font-size: 50px;
+    }
+    #dataTable_paginate {
+        float: left !important;
+    }
+    .btn-status {
+        font-size: 13px !important;
+        font-weight: bold;
+    }
+    .media-body p {
+        color: black !important;
+        font-weight: bold !important;
+    }
+    .dataTable {
+        color: black !important;
+        font-weight: bold !important;
+    }
+    .show-scroll {
+        overflow-y: scroll !important;
+        overflow-x: scroll !important;
+    }
+    #chat-content::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: #F5F5F5;
+    }
+    #chat-content::-webkit-scrollbar
+    {
+        width: 12px;
+        height: 12px;
+        background-color: #F5F5F5;
+    }
+    #chat-content::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #858796;
+    }
+    .dataTables_scrollBody::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: #F5F5F5;
+    }
+    .dataTables_scrollBody::-webkit-scrollbar
+    {
+        width: 12px;
+        height: 12px;
+        background-color: #F5F5F5;
+    }
+    .dataTables_scrollBody::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #858796;
+    }
+    </style>`) %>
+<% block('styles').append(`<link href="../../../public/css/chat.css" rel="stylesheet" type="text/css">`) %>
+<% layout('./layouts/main', {name: 'Dashboard' }) %>
+    <!-- Content Row -->
+    <div class="row" style="text-align: center;">
+        <!-- Earnings (Monthly) Card Example -->
+        <div class="col-xl-4 col-md-6 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                <h2 class="m-0 font-weight-bold text-success">User Connect</h4>
+                            </div>
+                            <div class="h1 mb-0 font-weight-bold text-gray-800 text-user user-connect">
+                                <%= dataConnect.length %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Earnings (Monthly) Card Example -->
+        <div class="col-xl-4 col-md-6 mb-4">
+            <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                                <h2 class="m-0 font-weight-bold text-danger">User Disconnect</h2>
+                            </div>
+                            <div class="h1 mb-0 font-weight-bold text-gray-800 text-user user-disconnect">
+                                <%= dataDisconnect.length %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Earnings (Monthly) Card Example -->
+        <div class="col-xl-4 col-md-6 mb-4">
+            <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-uppercase mb-1">
+                                <h2 class="m-0 font-weight-bold text-primary">Total User</h2>
+                            </div>
+                            <div class="h1 mb-0 font-weight-bold text-gray-800 text-user total-user">
+                                <%= data.length %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Row -->
+    <div class="row">
+        <!-- IOT Status -->
+        <div class="col-xl-4 col-lg-7" style="display: none">
+            <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h5 class="m-0 font-weight-bold text-primary">IOT Status</h5>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                    <div class="chart-area">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="input-group">
+                                    <input type="text" class="form-control bg-light border-0 small" id="macIot"
+                                        placeholder="MAC IOT Connect" aria-label="Search"
+                                        aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary btn-connect-server" type="button">Connect
+                                            Server</button>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="input-group">
+                                    <input type="text" class="form-control bg-light border-0 small"
+                                        id="macIotRemove" placeholder="MAC IOT Remove" aria-label="Search"
+                                        aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-warning btn-remove-server" type="button">Remove
+                                            Server</button>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="input-group">
+                                    <input type="text" class="form-control bg-light border-0 small" id="macIotControl" placeholder="MAC,StatusBtn1,StatusBtn2"
+                                        aria-label="Search" aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success btn-control-server" type="button">Control</button>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="input-group">
+                                    <input type="text" class="form-control bg-light border-0 small hide"
+                                        id="macIotRemoveRoom" placeholder="Remove Room" aria-label="Search"
+                                        aria-describedby="basic-addon2">
+                                    <div class="input-group-append"></div>
+                                    <button class="btn btn-info btn-join-to-room col" type="button">Join To
+                                        Room</button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="sidebar-divider">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <button class="btn btn-circle btn-lg btn-danger btn-status">X</button>
+                                <button class="btn btn-circle btn-lg btn-success btn-status btn-on1">On
+                                    1</button>
+                                <button class="btn btn-circle btn-lg btn-success btn-status btn-on2">On
+                                    2</button>
+                                <button class="btn btn-circle btn-lg btn-warning btn-status btn-off1">Off
+                                    1</button>
+                                <button class="btn btn-circle btn-lg btn-warning btn-status btn-off2">Off
+                                    2</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Message -->
+        <div class="col-xl-8 col-lg-7">
+            <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h5 class="m-0 font-weight-bold text-primary">Message</h5>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                    <div class="chart-area">
+                        <div class="col-md-12">
+                            <div class="card card-bordered">
+                                <div class="ps-container ps-theme-default ps-active-y" id="chat-content">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- List User -->
+        <div class="col-xl-4 col-lg-5">
+            <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h5 class="m-0 font-weight-bold text-primary">List User</h5>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                    <div class="chart-area">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Machine</th>
+                                    <th>MAC</th>
+                                    <th>Status</th>
+                                    <th>Login</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% data.forEach((dat, index)=> { %>
+                                    <tr>
+                                        <td>
+                                            <%= index + 1 %>
+                                        </td>
+                                        <td>
+                                            <%= dat.machineName %>
+                                        </td>
+                                        <td>
+                                            <%= dat.mac %>
+                                        </td>
+                                        <td>
+                                            <% if(dat.connect==1) { %> Connect <% } else { %> Disconnect <% } %>
+                                        </td>
+                                        <td>
+                                            <% if(dat.login==1) { %> Login <% } else { %> Logout <% } %>
+                                        </td>
+                                    </tr>
+                                    <% }); %>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<% block('scripts').append(`<script src="../../../public/js/iotStatus.js"></script>`) %>
