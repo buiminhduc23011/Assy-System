@@ -9,7 +9,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIO(server);
 
-const PORT = process.env.PORT || 7000;
+const PORT = process.env.PORT || 3000;
 
 function logToFile(message) {
   const timestamp = new Date().toLocaleString();
@@ -25,7 +25,7 @@ function logToFile(message) {
 
 io.on("connection", (socket) => {
   console.log("Client connected");
-	logToFile("Client connected");
+  logToFile("Client connected");
   socket.emit("message", "Welcome to the server!");
 
   // Lắng nghe sự kiện 'sendMessage' từ client và broadcast đến tất cả client
@@ -36,7 +36,7 @@ io.on("connection", (socket) => {
   // Lắng nghe sự kiện 'disconnect' khi client ngắt kết nối
   socket.on("disconnect", () => {
     console.log("Client disconnected");
-	logToFile("Client disconnected");
+    logToFile("Client disconnected");
   });
   socket.on("connect-machine", (data) => {
     console.log("IoT device connected:", data);
@@ -69,20 +69,54 @@ io.on("connection", (socket) => {
   socket.on("Stop-Plan", (data) => {
     console.log("Stop-Plan:", data);
   });
-  socket.on("End-Plan", (data) => {
-    console.log("End-Plan:", data);
+  socket.on("assy-send-frame_id", (data) => {
+    console.log("assy-send-frame_id:", data);
   });
-  socket.on("update-states", (data) => {
-    console.log("update-states:", data);
+  socket.on("assy-success-production", (data) => {
+    console.log("assy-success-production:", data);
+  });
+  socket.on("assy-status", (data) => {
+    console.log("assy-status':", data);
   });
 });
 // setInterval(() => {
-//     const data = { Order_ID : generateRandomString(20),
+//     const data = { status : true,
 //      };
-//     console.log("Order", data);
-//     io.emit('get-data-order', data);
+//      console.log(data);
+//     io.emit('assy-start-order', data);
+
+// }, 1000);
+// setInterval(() => {
+//   const data_ = {
+//     cmd_agv_status: Math.floor(Math.random() * 10),
+//   };
+//   console.log(data_);
+//   io.emit('cmd-agv-status', data_);
 
 // }, 5000);
+// setInterval(() => {
+//   const order = {
+//     order_id: generateRandomString(20),
+//     frame_id: generateRandomString(20),
+//     product_id: generateRandomString(20),
+//   };
+
+//   const data_ = {
+//     status: true,
+//     data: order, // Use a colon (:) here instead of an equal sign (=)
+//   };
+
+//   console.log(data_);
+//   io.emit('assy-send-frame_id', data_);
+// }, 3000);
+
+// setInterval(() => {
+//   const data_ = { status : true, last_order :true,
+//   };
+//   console.log(data_);
+//  io.emit('assy-success-production', data_);
+
+// }, 2000);
 // setInterval(() => {
 //      const plan = {
 //         Plan_Id: Math.floor(Math.random() * 1000),
@@ -109,11 +143,11 @@ server.listen(PORT, () => {
   logToFile("Server Is Start");
 });
 function generateRandomString(maxLength) {
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    let result = '';
-    const length = Math.floor(Math.random() * maxLength) + 1; // +1 để đảm bảo có ít nhất một ký tự
-    for (let i = 0; i < length; i++) {
-        result += characters.charAt(Math.floor(Math.random() * characters.length));
-    }
-    return result;
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  let result = '';
+  const length = Math.floor(Math.random() * maxLength) + 1; // +1 để đảm bảo có ít nhất một ký tự
+  for (let i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
+  return result;
 }

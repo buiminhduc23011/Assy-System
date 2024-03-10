@@ -1,0 +1,68 @@
+tên sự kiện  : Gửi Trạng thái Máy Assy
+event        : assy-status
+message      : 
+{
+	'mac' : MAC,
+	'assy_status' : 1 ( assy gọi lệnh agv ) || 2 ( assy sẵn sàng cho agv cấp hàng ) || 3 ( assy đang hoạt động )
+}
+
+tên sự kiện  : Gửi Trạng thái lệnh AGV cho assy
+event        : cmd-agv-status
+message      : 
+{
+	   'cmd_agv_status' : 1 ( Đã có AGV nhận lệnh ) || 2 ( AGV đang chờ máy xác nhận ) || 3 ( AGV đã hoàn thành cấp hàng )
+}
+
+tên sự kiện  : Server yêu cầu assy bắt đầu chạy order
+Server       => Send
+event        : assy-start-order
+message      : 
+{
+	   'status' : true
+}
+
+tên sự kiện  : Assy gửi dữ liệu mã frame lên cho server
+Server       => Listen
+event        : assy-send-frame_id
+message      : 
+{
+	   'mac' : MAC,
+	   'frame_id' : Mã Frame scan được
+}
+
+tên sự kiện  : Server xác nhận đã hoàn thành lưu hay báo lỗi
+Server       => Send
+event        : assy-send-frame_id
+message      : 
+{
+	   'status' : true/false,
+	   'message': Thông báo nếu status = false,
+	   'data'   : {
+			  order_id : mã order,
+			  frame_id : mã frame vừa scan,
+			  product_id : Mã sản phẩm,
+		      }
+}
+
+
+tên sự kiện  : Assy gửi thông tin mã frame sau khi hoàn thành sản xuất
+Server       => Listen
+event        : assy-success-production
+message      : 
+{
+	   'mac' : MAC,
+	   'frame_id' : Mã Frame scan được,
+	   'Ass_Height' : ,
+ 	   'Drill_Depth' : ,
+ 	   'Pin_Error' : ,
+ 	   'Status' : ,
+
+}
+tên sự kiện  : Server xác nhận đã hoàn thành lưu hay báo lỗi
+Server       => Send
+event        : assy-success-production
+message      : 
+{
+	     'status' : true
+	     'last-order' : true/false
+}

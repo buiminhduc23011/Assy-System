@@ -1,4 +1,5 @@
 ﻿using Assy_System_UI.Class;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -24,12 +25,14 @@ namespace Assy_System_UI.UserControl
             OrderID = OrderID_;
         }
     }
+    
     public partial class Production
     {
         public static string OrderID = String.Empty;
         private CancellationTokenSource _cancellationTokenSource;
         private bool areTasksInitialized = false;
         private List<Task> tasks = new List<Task>();
+        PLC PLC = new PLC();
         //
         Data Data = new Data();
         public Production()
@@ -126,6 +129,16 @@ namespace Assy_System_UI.UserControl
         private void bt_Delete_Click(object sender, RoutedEventArgs e)
         {
             Data.Remove_Data(txbOrderID.Text);
+        }
+
+        private void bt_DoneOrder_Click(object sender, RoutedEventArgs e)
+        {
+            Data.Done_Order(txbOrderID.Text);
+        }
+
+        private void bt_Start_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

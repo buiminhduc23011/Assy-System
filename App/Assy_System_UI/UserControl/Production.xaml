@@ -26,7 +26,7 @@
                          FontSize="30"
                          FontStyle="Normal"
                          FontFamily="Source Sans Pro"
-                         Width="1230"
+                         Width="800"
                          Height="50"
                          TextChanged="txbOrderID_TextChanged"></TextBox>
                 <Grid Width="200">
@@ -36,6 +36,20 @@
                             HorizontalAlignment="Center"
                             VerticalAlignment="Center" Click="bt_Delete_Click"
                             ></Button>
+                </Grid>
+                <Grid Width="200">
+                    <Button Content="Trigger Done"
+            x:Name="bt_DoneOrder"
+            Width="120"
+            HorizontalAlignment="Center" Click="bt_DoneOrder_Click"
+            ></Button>
+                </Grid>
+                <Grid Width="200">
+                    <Button Content="Trigger Start"
+x:Name="bt_Start"
+Width="120"
+HorizontalAlignment="Center" Click="bt_Start_Click"
+></Button>
                 </Grid>
             </StackPanel>
             <DataGrid x:Name="List_Order"

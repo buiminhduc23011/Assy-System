@@ -7,6 +7,7 @@ using System.Text.Json;
 using System.IO;
 using Newtonsoft.Json;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace Assy_System_UI.Class
 {
@@ -195,6 +196,25 @@ namespace Assy_System_UI.Class
             string newJsonString = System.Text.Json.JsonSerializer.Serialize(newData, jsonOptions);
             // Write back to file
             File.WriteAllText(Path_IO.DataOrder, newJsonString);
+        }
+        public void Done_Order(string OrderID)
+        {
+            string json = File.ReadAllText(Path_IO.DataOrder);
+            var options = new JsonSerializerOptions { ReadCommentHandling = JsonCommentHandling.Skip };
+            var data = System.Text.Json.JsonSerializer.Deserialize<DataTemp[]>(json, options);
+            foreach (var item in data)
+            {
+                if (item.OrderID == OrderID)
+                {
+                    item.Status = "Done";
+
+                    var jsonOptions = new JsonSerializerOptions { WriteIndented = true };
+                    string newJsonString = System.Text.Json.JsonSerializer.Serialize(data, jsonOptions);
+                    // Write back to file
+                    File.WriteAllText(Path_IO.DataOrder, newJsonString);
+                    break;
+                }
+            }
         }
     }
     public class DataTemp

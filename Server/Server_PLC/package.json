@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "mcprotocol": "^0.1.2",
+    "nodes7": "^0.3.18",
+    "socket.io-client": "^4.7.4"
+  }
+}

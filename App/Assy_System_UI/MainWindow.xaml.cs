@@ -57,6 +57,9 @@ namespace Assy_System_UI
         //Status Device
         private bool Is_QR1;
         private bool Is_QR2;
+        private int assy_status_temp = 0;
+        //
+
         public static string GetMacAddress()
         {
 
@@ -103,6 +106,12 @@ namespace Assy_System_UI
             bt_Production.Background = new SolidColorBrush(Color.FromRgb(100, 149, 237));
             //Remove_Data("Ducne");
             PLC.Start();
+            for(int i = 1;i<6;i++)
+            {
+                PLC.Delete_Order(i);
+            }    
+            
+            
         }
         private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
@@ -221,6 +230,20 @@ namespace Assy_System_UI
                             }
                         }
                     }
+                    if(ResPLC.Assy_status != 0) 
+                    {
+                        if(assy_status_temp!= ResPLC.Assy_status) 
+                        {
+                            var Assy_Status = new
+                            {
+                                mac = GetMacAddress(),
+                                assy_status = ResPLC.Assy_status,
+                            };
+                            await socketclient.EmitAsync("assy-status", Assy_Status);
+                            assy_status_temp = ResPLC.Assy_status;
+                        }
+                        
+                    }
                     //Rev
                         socketclient.On("assy-get-data-order", response =>
                     {
@@ -265,8 +288,25 @@ namespace Assy_System_UI
                             JArray jsonArray = JArray.Parse(res);
                             if (bool.Parse(jsonArray[0]["status"].ToString()))
                             {
+                                PLC.Delete_Order(int.Parse(jsonArray[0]["ID"].ToString()));
                                 Data.Remove_Data(jsonArray[0]["OrderID"].ToString());
                             }
+                        }
+                    });
+                    socketclient.On("cmd-agv-status", response =>
+                    {
+                    string res = response.ToString();
+                    if (res != null)
+                    {
+                        JArray jsonArray = JArray.Parse(res);
+                            var data = new
+                            {
+
+                                agv_status = int.Parse(jsonArray[0]["cmd_agv_status"].ToString()),
+                            };
+                            string jsonData = JsonConvert.SerializeObject(data);
+                            PLC.Write5(jsonData);
+                           // MessageBox.Show("OK");
                         }
                     });
                 }
@@ -402,7 +442,7 @@ namespace Assy_System_UI
                         CheckData_OrderDone();
                     }
                     PLC.Update_DataOrder();
-                    await Task.Delay(2000);
+                    await Task.Delay(1000);
                 }
             }
             catch (Exception ex)
