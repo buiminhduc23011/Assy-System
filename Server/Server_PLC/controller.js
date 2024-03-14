@@ -41,8 +41,6 @@ module.exports = {
       });
 
       valuesReadyplc(null, newValues);
-
-      // Return the array directly
       return values_plc;
     } catch (error) {
       console.log("Error reading data from PLCs", error);

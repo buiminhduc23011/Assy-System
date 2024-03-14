@@ -70,7 +70,18 @@ io.on("connection", (socket) => {
     console.log("Stop-Plan:", data);
   });
   socket.on("assy-send-frame_id", (data) => {
-    console.log("assy-send-frame_id:", data);
+    console.log("assy-send-frame_id", data);
+    const order = {
+      order_id: generateRandomString(10),
+      frame_id: data.frame_id,
+      product_id: generateRandomString(20),
+    };
+    const data_ = {
+      status: true,
+      data: order, // Use a colon (:) here instead of an equal sign (=)
+    };
+    console.log(data_);
+    io.emit('assy-send-frame_id', data_);
   });
   socket.on("assy-success-production", (data) => {
     console.log("assy-success-production:", data);
@@ -94,21 +105,6 @@ io.on("connection", (socket) => {
 //   io.emit('cmd-agv-status', data_);
 
 // }, 5000);
-// setInterval(() => {
-//   const order = {
-//     order_id: generateRandomString(20),
-//     frame_id: generateRandomString(20),
-//     product_id: generateRandomString(20),
-//   };
-
-//   const data_ = {
-//     status: true,
-//     data: order, // Use a colon (:) here instead of an equal sign (=)
-//   };
-
-//   console.log(data_);
-//   io.emit('assy-send-frame_id', data_);
-// }, 3000);
 
 // setInterval(() => {
 //   const data_ = { status : true, last_order :true,

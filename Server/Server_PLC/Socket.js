@@ -21,19 +21,21 @@ socket.on('assy-send-frame_id', (data) => {
     const status = data.status;
     if (status == true) {
         const data_ = data.data;
-        const order = { I_FrameID: convertString(data_.frame_id, data_.frame_id.length) };
+        const order = { I_FrameID: convertString(data_.frame_id, data_.frame_id.length), Cf_OK: 1 };
         plc_controller(plc, order);
     }
     else {
-        const data_ = { error_input_frame: !status };
+        const data_ = { error_input_frame: 1, Cf_OK: 2 };
         plc_controller(plc, data_);
     }
-
 });
 socket.on('assy-success-production', (data) => {
     const status = data.status;
-    const data_ = { last_order: data.last_order };
-    plc_controller(plc, data_);
+    const last_order = data.last_order;
+    if (last_order == true) {
+        const data_ = { last_order: 1 };
+        plc_controller(plc, data_);
+    }
     console.log('assy-success-production:', data);
 });
 socket.on('close', () => {
